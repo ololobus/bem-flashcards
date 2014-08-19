@@ -9,6 +9,7 @@
     "libs"
   ],
   "dependencies": {
-    "bem-components": "84269fed566ba22a0a144a67ff9b9e2cb4f1c154"
+    "bem-core": ">=2.2.4",
+    "bem-history": "git@github.com:bem/bem-history.git#e4caad4faf0de7e341907273e6defa93c4e7c8fb"
   }
 }
