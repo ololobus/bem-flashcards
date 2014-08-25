@@ -12,8 +12,9 @@ modules.define('dict', [], function(provide) {
     
     
     provide({
-       random: function() {
-           return words[Math.floor(Math.random()*words.length)];
+       random: function randomWord(oldWord) {
+           var newWord = words[Math.floor(Math.random()*words.length)]
+           return newWord !== oldWord ? newWord : randomWord(oldWord);
        },
        
        translate: function(word) {
