@@ -8,7 +8,7 @@ modules.define('i-bem__dom', ['dict', 'location', 'jquery'], function(provide, d
                     location.on('change', this._onLocationChange, this);
                     this.bindTo('click', this._onClick);
                     
-                    this.word = location.getState().params['w'];
+                    this.word = (location.getState().params['w'] || [])[0];
                     
                     if (!this.word) {
                         this._next();
@@ -30,7 +30,7 @@ modules.define('i-bem__dom', ['dict', 'location', 'jquery'], function(provide, d
         },
         
         _next: function() {
-            location.change({ params: { w: dict.random() } });
+            location.change({ params: { w: dict.random(this.word) } });
         },
         
         _onClick: function() {
@@ -44,7 +44,7 @@ modules.define('i-bem__dom', ['dict', 'location', 'jquery'], function(provide, d
         },
         
         _onLocationChange: function() {
-            this.word = location.getState().params['w'];
+            this.word = (location.getState().params['w'] || [])[0];
             this
                 .delMod('status')
                 .setMod('status', 'showed');
