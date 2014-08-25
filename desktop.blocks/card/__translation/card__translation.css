@@ -1,4 +1,5 @@
 .card__translation
 {
     transform: rotateY(180deg);
+    color: rgb(255, 66, 50);
 }
