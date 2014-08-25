@@ -1,6 +1,7 @@
 {
     shouldDeps: [
         { block: 'location' },
-        { block: 'dict' }
+        { block: 'dict' },
+        { mods: { status: ['showed', 'translated'] } }
     ]
 }
