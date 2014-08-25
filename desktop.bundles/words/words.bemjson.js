@@ -13,8 +13,10 @@
     content: [
         {
             block: 'card',
+            js: true,
             content: [
-                'flashcard content goes here'
+                { elem: 'word', content: [''] },
+                { elem: 'translation', content: [''] }
             ]
         }
     ]
