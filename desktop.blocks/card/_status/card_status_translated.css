@@ -2,3 +2,8 @@
 {
     transform: rotateY(180deg);
 }
+
+.card_status_translated .card__translation
+{
+    z-index: 3;
+}
