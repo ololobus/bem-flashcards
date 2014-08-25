@@ -1,4 +1,4 @@
-.card_status_translated .card__translation
+.card_status_translated
 {
-    display: block;
+    transform: rotateY(180deg);
 }

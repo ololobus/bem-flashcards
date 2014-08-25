@@ -15,8 +15,8 @@
             block: 'card',
             js: true,
             content: [
-                { elem: 'word', content: [''] },
-                { elem: 'translation', content: [''] }
+                { elem: 'word', content: [''], mix: [{ block: 'side' }] },
+                { elem: 'translation', content: [''], mix: [{ block: 'side' }] }
             ]
         }
     ]

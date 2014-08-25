@@ -1,18 +1,17 @@
 .card
 {
-    width: 400px;
-    min-height: 150px;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 30px;
+    position: relative;
     
-    border: 1px solid rgba(0,0,0,0.5);
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
     border-radius: 10px;
-    background-color: white;
     cursor: pointer;
-}
-
-.card:hover
-{
+    
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
