@@ -1,0 +1,57 @@
+/* blocks/page/page.css begin */
+.page {
+  perspective: 1000px;
+  background-color: rgba(186,214,73,0.9);
+}
+/* blocks/page/page.css end */
+/* ../../desktop.blocks/card/card.css begin */
+.card {
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/* ../../desktop.blocks/card/card.css end */
+/* ../../desktop.blocks/card/__word/card__word.css begin */
+.card__word {
+  z-index: 2;
+}
+/* ../../desktop.blocks/card/__word/card__word.css end */
+/* ../../desktop.blocks/card/__translation/card__translation.css begin */
+.card__translation {
+  transform: rotateY(180deg);
+  color: #ff4232;
+}
+/* ../../desktop.blocks/card/__translation/card__translation.css end */
+/* ../../desktop.blocks/side/side.css begin */
+.side {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 100px;
+  padding: 100px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 40px;
+  text-align: center;
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+/* ../../desktop.blocks/side/side.css end */
+/* ../../desktop.blocks/card/_status/card_status_translated.css begin */
+.card_status_translated {
+  transform: rotateY(180deg);
+}
+.card_status_translated .card__translation {
+  z-index: 3;
+}
+/* ../../desktop.blocks/card/_status/card_status_translated.css end */
