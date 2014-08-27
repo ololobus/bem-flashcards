@@ -1,4 +1,4 @@
-modules.define('i-bem__dom', ['dict', 'location', 'jquery'], function(provide, dict, location, $, DOM) {
+modules.define('i-bem__dom', ['dict', 'location', 'strings__escape'], function(provide, dict, location, escape, DOM) {
 
     DOM.decl('card', {
         
@@ -20,7 +20,7 @@ modules.define('i-bem__dom', ['dict', 'location', 'jquery'], function(provide, d
             
             'status': {
                 'showed': function() {
-                    this.elem('word').text(this.word);
+                    this.elem('word').html(escape.html(this.word) + '<br>' + dict.transcript(this.word));
                 },
 
                 'translated': function() {
