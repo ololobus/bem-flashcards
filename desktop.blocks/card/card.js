@@ -1,6 +1,6 @@
-modules.define('i-bem__dom', ['dict', 'location', 'strings__escape'], function(provide, dict, location, escape, DOM) {
+modules.define('card', ['dict', 'location', 'strings__escape', 'i-bem__dom'], function(provide, dict, location, escape, BEMDOM) {
 
-    DOM.decl('card', {
+    BEMDOM.decl(this.name, {
         
         onSetMod: {
             'js': {
@@ -56,6 +56,6 @@ modules.define('i-bem__dom', ['dict', 'location', 'strings__escape'], function(p
         
     });
 
-    provide(DOM);
+    provide(BEMDOM);
 
 });
