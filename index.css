@@ -1,5 +1,6 @@
 /* blocks/page/page.css begin */
 .page {
+  -webkit-perspective: 1000px;
   perspective: 1000px;
   background-color: rgba(186,214,73,0.9);
 }
@@ -7,7 +8,9 @@
 /* ../../desktop.blocks/card/card.css begin */
 .card {
   position: relative;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   width: 400px;
   height: 300px;
@@ -25,12 +28,14 @@
 /* ../../desktop.blocks/card/__word/card__word.css end */
 /* ../../desktop.blocks/card/__translation/card__translation.css begin */
 .card__translation {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  color: #ff4232;
+  color: #713eda;
 }
 /* ../../desktop.blocks/card/__translation/card__translation.css end */
 /* ../../desktop.blocks/side/side.css begin */
 .side {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -43,12 +48,14 @@
   font-size: 40px;
   text-align: center;
   background-color: #fff;
+  background-image: -webkit-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), -webkit-linear-gradient(#eee 0.1em, transparent 0.1em);
   background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
 }
 /* ../../desktop.blocks/side/side.css end */
 /* ../../desktop.blocks/card/_status/card_status_translated.css begin */
 .card_status_translated {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .card_status_translated .card__translation {
