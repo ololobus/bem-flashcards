@@ -2,6 +2,7 @@
     block: 'page',
     title: 'EN-RU flashcards',
     favicon: '/favicon.ico',
+    mix: { block: 'app', js: true },
     head: [
         { elem: 'meta', attrs: { name: 'description', content: 'Russian, English, words, flashcards' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },

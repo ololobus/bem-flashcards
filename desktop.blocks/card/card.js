@@ -38,13 +38,7 @@ modules.define('card', ['dict', 'location', 'strings__escape', 'i-bem__dom'], fu
         },
         
         _onClick: function() {
-            switch (this.getMod('status')) {
-                case 'showed':
-                    this.setMod('status', 'translated');
-                    break;
-                default:
-                    this._next();
-            }
+            this.flip();
         },
         
         _onLocationChange: function() {
@@ -52,6 +46,16 @@ modules.define('card', ['dict', 'location', 'strings__escape', 'i-bem__dom'], fu
             this
                 .delMod('status')
                 .setMod('status', 'showed');
+        },
+        
+        flip: function() {
+            switch (this.getMod('status')) {
+                case 'showed':
+                    this.setMod('status', 'translated');
+                break;
+                default:
+                    this._next();
+            }
         }
         
     });
